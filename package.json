@@ -1,6 +1,7 @@
 {
   "name": "cv-nosenko",
   "version": "0.0.0",
+  "homepage":"https://narus2.github.io/narus/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
