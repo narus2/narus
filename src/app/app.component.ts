@@ -11,7 +11,7 @@ export class AppComponent {
 
   cv!: Cv;
   skils: Array<string> = [];
-  photo: string = '../../assets/img/Ava.jpg'
+  photo: string = 'https://lh3.googleusercontent.com/nn3HPUmGPKLGfttQU1nl4zt1CM_MaigPuXHaFEa0xAZ5CipxgEhMCD9I650qC9Q_hy8_NfPQ_dF2Dh9OsLNWB3zwFuN1EOrbnymzrXxCK7-NvhA0xTYY9ep1R6SejQqlS4rLPhDHQromQKk_Osted93VUa33Ptbyzn9MrovzL8tk5hda5zZf-Y-PXWlX-cRUdfx_YkEs2dq9zkbIRzxNLJeyAjjnP3mnrIXE_2FZ-unVApdALb0vhR2_8jDMKsR4UJ06u_xICmX6eXT-TGaDVuvJuDGhrLCaX033uB_H64ZPaWirbgEJsEqelnJUWpXONQfTkcVg9OdHE9ULFqAXWbkgmj0F_qlYoMp_Qe0dvj_LYBrqEvF4kDZrTdDfZDDQAg8Fm3zK12kHxxGId_6DPV1_q2ecEWkVhVkKC2if21owi7O3Ow8Tk4KGnQVLgr9ojaRM4L1koiKGoQsw-_WifXQPiOxstX4ZxATtcah03apOqlRXUy_ZZ_cOWo6WDcbF8QUTADDDAncbu8Kc2UlnJOS9wv0yQ9QNplWn3LVa8JqGwdPxeV5aNHE_HpQU1l7TnahS30M_DXaKcpses7GzOaj3Qq3OZuLJwi6LuCAuSD2-3rEGkNC9eG-INCaqQ8FXhIH431WCLaQXtq8IWhJVZBU53q0Eg5wcEzd6wAI9OQYzQTY8H7o40udbwtHbmbIpH1qktyW86iqQkqAz5_gvmQ2R_1ErKASc2lNbQMKHoDkQYxs4p3bRSR9C2DaCkug=w690-h919-no?authuser=0'
   constructor(private servise: RabotaService) { }
 
   title = 'cv-Nosenko'

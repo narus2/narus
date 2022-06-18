@@ -21,4 +21,8 @@ export class RabotaService {
       return this.http.get<Cv>("https://nosenko-cv-back.herokuapp.com/",this.httpOptions)
   }
 
+  async getImage(){
+      return this.http.get<String>("https://nosenko-cv-back.herokuapp.com/",this.httpOptions)
+  }
+
 }
