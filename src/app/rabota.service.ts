@@ -22,7 +22,7 @@ export class RabotaService {
   }
 
   async getImage(){
-      return this.http.get<String>("https://nosenko-cv-back.herokuapp.com/",this.httpOptions)
+      return this.http.get<String>("https://nosenko-cv-back.herokuapp.com/image",this.httpOptions)
   }
 
 }
