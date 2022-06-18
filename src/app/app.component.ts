@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CV } from './cv';
+import { Convert, Cv } from './CV';
 import { RabotaService } from './rabota.service';
 
 @Component({
@@ -9,9 +9,9 @@ import { RabotaService } from './rabota.service';
 })
 export class AppComponent {
 
-  cv: CV | undefined;
+  cv!: Cv;
   skils: Array<string> = [];
-  photo: string = '../assets/img/Ava.png'
+  photo: string = '../../assets/img/Ava.jpg'
   constructor(private servise: RabotaService) { }
 
   title = 'cv-Nosenko'
@@ -30,7 +30,7 @@ export class AppComponent {
   async ngOnInit(){
   (await this.servise.getCV()).subscribe(
     (data) => {
-      this.cv = <CV>{ ...data }
+      this.cv = data
       console.log(data)
       this.setSkils()
     }
@@ -38,7 +38,8 @@ export class AppComponent {
   }
 
   async get_photo(){
-    (await this.servise.getPhoto()).subscribe((data) => {this.photo = <string>data}) 
+    // (await this.servise.getPhoto()).subscribe((data) => {this.photo = <string>data})
+    // return this.photo
   }
 
   tupe(key: number ){
