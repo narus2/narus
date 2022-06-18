@@ -38,8 +38,7 @@ export class AppComponent {
   }
 
   async get_photo(){
-    // (await this.servise.getPhoto()).subscribe((data) => {this.photo = <string>data})
-    // return this.photo
+    (await this.servise.getImage()).subscribe((data) => {this.photo = <string>data})
   }
 
   tupe(key: number ){
